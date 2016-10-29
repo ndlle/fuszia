@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="pl">
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width">
+<link rel="stylesheet" href="css/onepage.css" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<title>template</title>
+    
+    <script src="js/jquery.sticky.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+    
+    
+</head>
+<body>
+   
+    <header class="header">
+        <div class="container">
+        <h1>Sklep muzyczny <br>"Gitara akbar"</h1>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis metus odio. Aliquam faucibus, risus ac tincidunt rutrum.
+            </div>
+    </header>
+         <div class="nav">
+        <div class="container">
+        <ul>
+    <li><a href="#oferta">Oferta</a></li>
+    <li><a href="#sklad">Skład</a></li>
+    <li><a href="#projekty">Projekty</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+            </div>
+        </div>
+    
+    
+    
+    <section class="section" id="sklad">
+        <div class="container">
+        <h2>Nasza ekipa</h2>
+    <div class="circle">
+        
+        <ul>
+            <li><img src="img/avatar1.png" alt="av1">Dupa i coś jeszcze. Generalnie fajny opis xd Vestibulum condimentum viverra fermentum. Nullam sollicitudin leo vitae arcu pulvinar, interdum pharetra purus vestibulum. Donec varius lacus mauris, laoreet euismod magna euismod finibus. Cras vulputate, ligula eu egestas rutrum, mi sapien egestas quam</li>
+            <li><img src="img/avatar2.png" alt="av2">
+            To jest Tomek. Tomek jest mega cwelem który bierze cały nasz hajs i się w ogóle nie dzieli. Przepija wszystko, wydaje na prochy a w firme nie zainwestuje ani grosza. </li>
+            <li><img src="img/avatar3.jpg" alt="av3">
+            In eu ipsum leo. Ut accumsan leo vitae nisl volutpat feugiat. Praesent placerat non quam in porttitor. Morbi nisl sem, fermentum eget ipsum quis, porta euismod tortor. Suspendisse efficitur nisl vel mauris bibendum, sit amet vehicula ante luctus. Nunc vehicula bibendum libero accumsan feugiat. Aenean erat ante, dictum nec mauris eget, lacinia aliquet dui. Morbi non mollis mi.</li>
+        </ul>
+            </div>
+            </div>
+    </section>
+    
+    <section class="section" id="projekty">
+        <div class="container">
+    <h2>Projekty</h2>
+    <div class="gallery">
+        
+        <img src="img/bgg.jpg" alt="małe kotki">
+        <img src="img/bgg.jpg" alt="małe kotki">
+        <img src="img/bgg.jpg" alt="małe kotki">
+        <img src="img/bgg.jpg" alt="małe kotki">
+
+        
+            
+        </div>
+            </div>
+    </section>    
+    
+    <section class="section" id="kontakt">
+        <div class="container">
+    <h2>kontakt</h2>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyACF0EeDA5qlbsvVCisf_0qhqb0MNv5Rao'></script><div style='overflow:hidden;height:400px;width:900px;'><div id='gmap_canvas' style='height:400px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://maps-generator.com/pl'>maps-generator.com</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=88cd26729401078f89781afb1f95b418eef34444'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(50.3506071,18.896964499999967),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.3506071,18.896964499999967)});infowindow = new google.maps.InfoWindow({content:'<strong>Tu jesteśmy!</strong><br>Zabrze<br> <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+            </div>
+    </section>
+    <footer class="stopa">
+        <div class="container">
+            <ul>
+            <li><img src="img/yt.png" alt="yt"></li>
+            <li><img src="img/fb.png" alt="fb"></li>
+            <li><img src="img/twitter.png" alt="tw"></li>
+            </ul>
+            &copy; Damian Polit 2016r.
+            </div>
+        </footer>
+    
+    
+    
+<script src="js/onepage.js"></script>
+
+<script>$(document).ready(function() {
+var stickyNavTop = $('.nav').offset().top;
+ 
+var stickyNav = function(){
+var scrollTop = $(window).scrollTop();
+      
+if (scrollTop > stickyNavTop) { 
+    $('.nav').addClass('sticky');
+} else {
+    $('.nav').removeClass('sticky'); 
+}
+};
+ 
+stickyNav();
+ 
+$(window).scroll(function() {
+  stickyNav();
+});
+});</script>
+<script>
+   $(document).ready(function() { 
+ 
+ $('a[href^="#"]').on('click', function(event) {
+ 
+ var target = $( $(this).attr('href') );
+ 
+ if( target.length ) {
+ event.preventDefault();
+ $('html, body').animate({
+ scrollTop: target.offset().top
+ }, 1000);
+ }
+ });
+ 
+});
+</script>
+    
+</body>
+</html>

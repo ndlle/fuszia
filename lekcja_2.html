@@ -1,0 +1,41 @@
+<html>
+<head lang="pl">
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/design.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+
+</head>
+<body id="lekcja4">
+    <div id="head">Javascript. Wszystkie lekcje.<img class="prawo"  src="img/logo.png"></div>
+    <div class="menu">Pętla for</div>
+    <br>
+    
+    <input type="text" id="tekst" value="Wpisz tekst">
+    <input type="button" value="Zatwierdź" onclick="sprawdz()"/>
+<div id="komunikat" class="okienko"></div>
+    <div class="menu">Pętla while</div>
+    <input type="text" id="tekst1" value="Wpisz tekst">
+    <input type="button" value="Zatwierdź" onclick="sprawdz1()"/>
+<div id="komunikat1" class="okienko"></div>
+   <div class="menu">Kod JavaScript</div>
+<pre class="code">
+function sprawdz() {
+     var a = parseInt(document.getElementById("tekst").value);
+    //document.getElementById("komunikat").innerHTML = a;
+    for(i=0;i<=a;i++) {
+        document.getElementById("komunikat").innerHTML+=i+" ";
+    }
+}
+function sprawdz1() {
+    var i = 1;
+    var b = parseInt(document.getElementById('tekst1').value);
+    while(i<=b) {
+        document.getElementById("komunikat1").innerHTML+=i+" ";
+        i++;
+    }
+}</pre>
+<script src="js/script_2.js"></script>
+</body>
+</html>

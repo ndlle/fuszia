@@ -1,0 +1,112 @@
+
+body, html {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 1280px;
+    margin: 0 auto;
+    background: url('../img/bg1.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.button {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 70px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    opacity: 0.7;
+    background: #2B2348;
+    transition-duration:0.8s;
+    -webkit-transition-duration:0.8s;
+}
+.button:hover {
+    text-shadow: 8px 1px 2px black;
+    opacity: 1;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#liczba {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#komunikat {
+    
+}
+
+#lekcja4 {
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+}
+
+.code {
+    font-family: monospace;
+    color: greenyellow;
+    text-align: left;
+    padding: 5px;
+    background-color: black;
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+    overflow:scroll;
+}
+
+#pusty {
+    background: #01152F;
+    width: 100%;
+    padding: 25px;
+    color: #ffffff;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: right;
+    
+}
+
+.okienko {
+    font-size: 30px;
+    border: 1px solid black;
+    font-family: serif;
+    text-align: center;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gra {
+    
+}
+
+#gra {
+    display: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+#gierka {
+    border: 1px solid black;
+}

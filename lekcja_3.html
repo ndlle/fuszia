@@ -1,0 +1,27 @@
+<html>
+<head lang="pl">
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/design.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+
+</head>
+<body id="lekcja4">
+    <div id="head">Javascript. Wszystkie lekcje.<img class="prawo"  src="img/logo.png"></div>
+    <div class="menu">document.getElementById()</div>
+    <br>
+    
+    <input type="text" id="tekst" value="Wpisz tekst">
+    <input type="button" value="Zatwierdź" onclick="sprawdz()"/>
+<div id="komunikat" class="okienko"></div>
+
+   <div class="menu">Kod JavaScript</div>
+<pre class="code">
+function sprawdz() {
+    var tekst = document.getElementById('tekst').value;
+    document.getElementById('komunikat').innerHTML = tekst;
+}</pre>
+<script src="js/script_3.js"></script>
+</body>
+</html>

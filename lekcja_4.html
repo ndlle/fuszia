@@ -1,0 +1,28 @@
+<html>
+<head lang="pl">
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/design.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+<script src="js/script.js"></script>
+
+</head>
+<body id="lekcja4">
+ <div id="head">Javascript. Wszystkie lekcje.<img class="prawo" src="img/logo.png"></div>
+    <div id="menu">Wypisywanie kolejno liczb</div>
+<input type="text" id="liczba">
+    <input type="button" value="zobacz" onClick="wypisz()">
+    
+<div id="komunikat"></div>
+<h2>Kod JavaScript</h2>
+<pre class="code">
+    function wypisz() {
+    var a = parseInt(document.getElementById("liczba").value);
+    //document.getElementById("komunikat").innerHTML = a;
+    for(i=0;i<=a;i++) {
+    document.getElementById("komunikat").innerHTML+=i+" ";
+    }
+} </pre>
+</body>
+</html>

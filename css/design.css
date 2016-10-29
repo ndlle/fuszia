@@ -1,0 +1,42 @@
+
+#head {
+    width: 100%;
+    background: #01152F;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 70px;
+    text-align: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-indent: 50px;
+}
+
+.prawo {
+    float: right;
+    width: 150px;
+    height: 150px;
+}
+
+#menu {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #2B2348;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.menu {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #01152F;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+}

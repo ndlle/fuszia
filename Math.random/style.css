@@ -1,0 +1,90 @@
+
+body, html {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 auto;
+    background: url(../img/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.button {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 80px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 70px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.button:hover {
+    background: url("../img/bgb.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    transition: 0.5s;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#liczba {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#komunikat {
+    
+}
+
+#lekcja4 {
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+}
+
+.code {
+    font-family: monospace;
+    color: greenyellow;
+    text-align: left;
+    padding: 5px;
+    background-color: black;
+    font-size: 15px;
+    width: 70%;
+    margin: auto;
+}
+
+#pusty {
+    width: 100%;
+    height: 100px;
+}
+
+.okienko {
+    font-size: 30px;
+    border: 1px solid black;
+    font-family: serif;
+    text-align: center;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.gra {
+    
+}
+
+#gra {
+    display: none;
+}

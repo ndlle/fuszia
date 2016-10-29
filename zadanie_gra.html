@@ -1,0 +1,65 @@
+<html>
+<head lang="pl">
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/design.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+
+
+</head>
+<body id="lekcja4">
+ <div id="head">Javascript. Wszystkie lekcje.<img class="prawo" src="img/logo.png"></div>
+    <div id="menu">Zgadnij wylosowaną liczbe</div>
+    <br>
+    
+    <h2>Zacznij gre - kliknij start.</h2>
+    <input type="button" value="Start" onclick="start()">
+<div id="komunikat" class="okienko"></div>
+    <div id="gra">
+    <h2>Wpisz liczbe.</h2>
+    <input type=text id="tablica1"> 
+    <input type="button" value="Sprawdź" onclick="spr()">
+<div id="komunikat1" class="okienko"></div></div>
+   <!-- <input type=button value="Szukaj liczby 10" onclick="szukanie()">NIE DZIAŁA
+    <div id="komunikat2"></div>-->
+<h2>Kod JavaScript</h2>
+<pre class="code">
+var losowa_liczba;
+var ilosc_petla;
+var ilosc = 0;
+var testowanie = 0;
+var pomiar;
+
+function start() {
+    ilosc = 0;
+    document.getElementById('gra').style.display = "block";
+    losowa_liczba = Math.floor(Math.random()*100);
+    document.getElementById('komunikat1').innerHTML = " ";
+    alert(losowa_liczba);
+    
+}
+function spr() {
+    var sprawdz = parseInt(document.getElementById('tablica1').value);
+    if (losowa_liczba === sprawdz) {
+        ilosc++;
+        alert("Gratulacje! Udało Ci się za "+ilosc+" razem");
+        document.getElementById('gra').style.display = "none";
+    }
+    else {
+        ilosc++;
+        if (sprawdz > losowa_liczba) {
+            pomiar = "Liczba jest mniejsza.";
+        }
+        else {
+            pomiar = "Liczba jest większa."
+        }
+        document.getElementById('komunikat1').innerHTML = "Liczba nieudanych prób: "+ilosc+"&lt;br&gt;"+pomiar;
+    }
+}
+</pre>
+<script src="js/script_7.js"></script>
+    
+    
+</body>
+</html>

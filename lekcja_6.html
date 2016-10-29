@@ -1,0 +1,85 @@
+<html>
+<head lang="pl">
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/design.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+
+
+</head>
+<body id="lekcja4">
+    <div id="head">Javascript. Wszystkie lekcje.<img class="prawo" src="img/logo.png"></div>
+    <div id="menu">Tablice</div>
+    <br>
+    
+    <h2>Znajdowanie tablicy</h2>
+    <input type=text id="tablica"> </input>
+    <input type="button" value="Znajdź" onclick="znajdz()"></input>
+<div id="komunikat" class="okienko"></div>
+    <h2>dodwanie elementów pomiędzy tablicami</h2>
+    <input type=text id="tablica1"> </input>
+    <input type="button" value="Zapisz" onclick="przerwy()"></input>
+<div id="komunikat1" class="okienko"></div>
+<h2>Posortowana tablica alfabetycznie.</h2>
+<div id="komunikat2" class="okienko"></div>
+<h2>Posortowana tablica alfabetycznie (odwrotne)</h2>
+<div id="komunikat3" class="okienko"></div>
+<h2>Kod JavaScript</h2>
+<pre class="code">
+//TABLICE I ZNAJDYWANIE ICH TRESCI
+window.onload = sort();
+window.onload = sort_odwr();
+function znajdz() {
+    var liczba = parseInt(document.getElementById('tablica').value);
+    var tablica = new Array(5);
+    tablica[0] = "Kot";
+    tablica[1] = "Pies";
+    tablica[2] = "Kupa";
+    tablica[3] = "Ramola";
+    tablica[4] = "Koń";
+    var dlugosc_tablicy = tablica.length-1;
+
+    if (liczba>=5) {
+        document.getElementById('komunikat').innerHTML = 
+        "BŁĄD. Nie znaleziono wartości ("+liczba+") w tablicy. Największa wartość w tablicy: "+dlugosc_tablicy;
+    }
+    else {
+    document.getElementById('komunikat').innerHTML = "Treść z tablicy pod numerem "+liczba+" to "+tablica[liczba];
+}}
+//TAB JOIN - DODAWANIE TRESCI POMIEDZY PRZERWAMI W TABLICACH
+function przerwy() {
+    var tresc = document.getElementById('tablica1').value;
+    var tablica = new Array(5);
+    tablica[0] = "Kot";
+    tablica[1] = "Pies";
+    tablica[2] = "Kupa";
+    tablica[3] = "Ramola";
+    tablica[4] = "Koń";
+    var energy = tablica.join(" "+tresc+" ");
+    document.getElementById('komunikat1').innerHTML = "Treść z tablicy = "+energy;
+}
+//SORTOWANIE ZAWARTOŚCI
+function sort() {
+    var tablica = new Array(5);
+    tablica[0] = "Kot";
+    tablica[1] = "Pies";
+    tablica[2] = "Kupa";
+    tablica[3] = "Ramola";
+    tablica[4] = "Koń";
+    tablica.sort();
+    document.getElementById('komunikat2').innerHTML = tablica;
+}function sort_odwr() {
+    var tablica = new Array(5);
+    tablica[0] = "Kot";
+    tablica[1] = "Pies";
+    tablica[2] = "Kupa";
+    tablica[3] = "Ramola";
+    tablica[4] = "Koń";
+    tablica.sort();
+    tablica.reverse();
+    document.getElementById('komunikat3').innerHTML = tablica;
+}
+ </pre>
+<script src="js/script_6.js"></script>
+</body>
+</html>
